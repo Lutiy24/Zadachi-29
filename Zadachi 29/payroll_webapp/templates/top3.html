@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>ТОП-3 співробітники</title></head>
+<body>
+  <h2>ТОП-3 співробітники за зарплатнею</h2>
+  <table border="1">
+    <tr><th>Таб. №</th><th>Ім’я</th><th>Зарплата</th></tr>
+    {% for emp in employees %}
+      <tr>
+        <td>{{ emp[0] }}</td>
+        <td>{{ emp[1] }}</td>
+        <td>{{ emp[2] }} грн</td>
+      </tr>
+    {% endfor %}
+  </table>
+  <br><a href="/">На головну</a>
+</body>
+</html>
